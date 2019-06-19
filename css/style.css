@@ -1,0 +1,114 @@
+/*----------------------------------------
+	Page Top Bar
+------------------------------------------*/
+.page-topbar {
+    min-height: 60px;
+    width: 100%;
+    background-color: #3d779c;
+    top: 0px;
+    left: 0px;
+    z-index: 1999;
+    max-height: 87px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.page-topbar .title {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.page-topbar h4 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255);
+}
+
+.page-topbar .logo-area {
+    width: 80px;
+    background-color: #3d779c;
+    display: block;
+    min-height: 80px;
+    float: right;
+}
+
+.page-topbar .logo-area {
+    background-image: url('../img/default_logo.png');
+    background-repeat: no-repeat;
+    margin-top: 7px;
+}
+
+/*----------------------------------------
+	Content
+------------------------------------------*/
+
+.content{
+    padding-top: 15px;
+}
+
+/*----------------------------------------
+	Tables
+------------------------------------------*/
+
+th.organization{
+    width: 35%;
+}
+
+table thead th .header div {
+    float: left !important;
+    width: 33.333%;
+    padding: 0 8px 0 8px;
+    box-sizing: border-box;
+}
+
+tbody td, tbody th{
+    vertical-align: middle !important;
+    padding: 8px;
+}
+
+table.table table{
+    margin-bottom: 0;
+}
+
+table.table tr:nth-of-type(odd) table{
+    background-color: #f0f8ff;
+}
+
+table.table tr:hover table{
+    background-color: #DAE9F3;
+}
+
+table.table table td{
+    border-top: none !important;
+    width: 33.333333%;
+}
+
+table.table table tr:not(:first-child) td{
+    border-top: 1px solid #3d779c !important;
+}
+
+.no-time{
+    color: #999;
+}
+/*----------------------------------------
+	Reset
+------------------------------------------*/
+.clearable {
+    background-image: url('/schedule/img/clearable.png');
+    background-position: 150% 50%;
+    background-repeat: no-repeat;
+    transition: background 0.4s;
+    padding-right: 27px;
+    font-size: 2px;
+}
+.clearable__x {
+    background-position: 99% 50%;
+}
+.clearable__x_over {
+    cursor: pointer;
+}
+.clearable::-ms-clear {
+    display: none;
+}
